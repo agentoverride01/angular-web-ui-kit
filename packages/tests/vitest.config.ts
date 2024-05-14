@@ -5,7 +5,7 @@ import { join } from 'node:path'
 
 import angular from '@analogjs/vite-plugin-angular'
 
-import { getParentDir, getRootDir, hasEnvFile, hasRelativePath, vitestAlias } from '../tools/src/utils'
+import { getParentDir, hasEnvFile, vitestAlias } from '../tools/src/utils'
 
 export default defineConfig(({ mode }) => {
   const parentDir = getParentDir('packages/tests')
@@ -26,12 +26,7 @@ export default defineConfig(({ mode }) => {
     test: {
       globals: true,      
       setupFiles: [ join(__dirname, './src/test-setup.ts') ],
-      include: [ 
-        join(
-          hasRelativePath() ? join(getRootDir(), 'packages/tests'): getRootDir(), 
-          '**/*.{test,spec}.{js,ts,jsx,tsx}'
-        )
-      ],
+      include: [ './**/*.{test,spec}.{js,ts,jsx,tsx}' ],
       reporters: [ 'basic' ],
       coverage: {
         provider: 'v8',

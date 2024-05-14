@@ -73,7 +73,7 @@ export const vitestAlias = (rootDir?: string) => {
   const alias = viteAlias(rootDir)
   return Object.keys(alias).reduce((p, c) => {
     const $alias = {
-      find: c.replaceAll('*', ''),
+      find: c.replaceAll('/*', ''),
       replacement: alias[c].replaceAll('*', '')
     } as Alias
     return [ ...p, $alias ]
