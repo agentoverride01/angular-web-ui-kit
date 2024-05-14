@@ -1,0 +1,13 @@
+{
+  "compileOnSave": false,
+  "extends": "./packages/tools/tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "@app/*": [ "./src/app/*" ],
+      "@bofa/theme": [ "./packages/theme/styles.scss" ],
+      "@bofa/tools": [ "./packages/tools/src/tools.ts" ],
+      "@bofa/storybook/utils": [ "./packages/storybook/stories/utils.ts" ],
+      "@bofa/components/*": [ "./packages/components/src/*" ]
+    }
+  }
+}

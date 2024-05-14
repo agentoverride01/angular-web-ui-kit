@@ -1,0 +1,27 @@
+{
+  "name": "@bofa/tools",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Arjay Elbore <aelbore.sg@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@types/node": "^20.12.11",
+    "eslint": "^9.2.0",
+    "husky": "^9.0.11",
+    "get-tsconfig": "^4.7.5",
+    "lint-staged": "^15.2.2",
+    "sass": "^1.77.1",
+    "sirv-cli": "^2.0.2",
+    "typescript": "^5.4.5",
+    "tslib": "^2.6.2",
+    "vite": "^5.2.11"
+  }
+}

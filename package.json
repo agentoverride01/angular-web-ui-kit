@@ -1,0 +1,19 @@
+{
+  "name": "web-ui-kit",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "npm test -w packages/tests",
+    "coverage": "vitest run packages/tests --coverage --coverage.all false",
+    "coverage:ui": "npm run coverage:ui -w packages/tests",
+    "storybook": "npm run storybook -w packages/storybook",
+    "serve": "vite -c ./packages/tools/src/vite.config.ts"
+  },
+  "workspaces": [
+    "./packages/*"
+  ]
+}

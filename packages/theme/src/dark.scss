@@ -1,0 +1,20 @@
+[theme=dark] {
+  --secondary-yellow: #f2a900;
+
+  --profile-card-name-color: var(--primary-white);
+  --profile-card-title-color: var(--primary-white);
+  --profile-card-email-color: var(--secondary-yellow);
+  --profile-card-contact-title-color: var(--secondary-yellow);
+  --profile-card-contact-color:  #009CDE;
+
+  --checkbox-ripple-color: var(--secondary-yellow);
+  --checkbox-border-color: var(--secondary-yellow);
+  --checkbox-bg-color:  var(--secondary-yellow);
+  --checkbox-border-line-width: 1px;
+  --checkbox-check-color: #000;
+  --checkbox-text-color: var(--primary-white);
+  
+  body {
+    background: var(--theme-background);
+  }
+}
