@@ -3,10 +3,15 @@
 
   --checkbox-ripple-color: var(--primary-bright-blue);
   --checkbox-border-color: var(--primary-bright-blue);
-  --checkbox-bg-color:  var(--primary-bright-blue);
+  --checkbox-bg-color: var(--primary-bright-blue);
   --checkbox-border-line-width: 1px;
   --checkbox-check-color: var(--primary-white);
   --checkbox-text-color: #000;
+
+  --text-view-more-color: #000;
+  --research-report-text-view-more-opened-bg-color: var(--primary-bright-blue);
+  --research-report-text-view-more-opened-color: var(--primary-white); 
+  --research-report-text-view-more-closed-color: var(--primary-bright-blue);
   
   body {
     background: var(--theme-background);
